@@ -14,7 +14,8 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "regex": "^[a-z]+$"
     },
     "hero": {
       "model": "file",
@@ -44,7 +45,8 @@
     "form": {
       "type": "component",
       "repeatable": false,
-      "component": "form-setup.form"
+      "component": "form-setup.form",
+      "required": true
     },
     "cta": {
       "type": "string"
