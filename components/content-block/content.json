@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_block_contents",
+  "info": {
+    "name": "content",
+    "icon": "comment"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contentText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeating-text.content-text"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_repeating_text_content_texts",
+  "info": {
+    "name": "contentText",
+    "icon": "text-width"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "hero": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "content1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-block.content"
+    },
+    "content2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content-block.content"
+    },
+    "form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-setup.form"
+    },
+    "cta": {
+      "type": "string"
+    }
+  }
+}
