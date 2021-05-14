@@ -14,8 +14,7 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "regex": "^[a-z]+$"
+      "unique": true
     },
     "hero": {
       "model": "file",
@@ -50,6 +49,10 @@
     },
     "cta": {
       "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "required": true
     }
   }
 }
